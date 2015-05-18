@@ -67,7 +67,7 @@ sudo chown logstash:logstash /opt/logstash/patterns
 ---
 #### 2. Với Nginx
 
-- #####Tại **Client**
+#####- Tại **Client**
 
 `sudo vi /etc/logstash-forwarder.conf`
 
@@ -93,7 +93,7 @@ sudo chown logstash:logstash /opt/logstash/patterns
 
 `sudo service logstash-forwarder restart`
 
-- #####Tại **Server**
+#####- Tại **Server**
 
 `sudo vi /opt/logstash/patterns/nginx`
 
@@ -131,7 +131,7 @@ filter {
 
 ### 3. Với APACHE:
 
-- ##### Tại **Client**
+#####- Tại **Client**
 
 Đẩy file apache `access.log` lên server
 
@@ -159,7 +159,7 @@ filter {
 
 `sudo service logstash-forwarder restart`
 
-- #### Tại **SERVER**
+ ####- Tại **SERVER**
 
 `sudo vi /etc/logstash/conf.d/12-apache.conf`
 
@@ -182,7 +182,7 @@ filter {
 
 ####4. Với SSH:
 
-- ##### Tại **Client**
+ #####- Tại **Client**
 
 `sudo vi /etc/logstash-forwarder.conf`
 
@@ -209,7 +209,7 @@ filter {
 `sudo service logstash-forwarder restart`
 
 
-- #####Tại **Server**
+ #####- Tại **Server**
 
 `sudo vi /opt/logstash/patterns/ssh`
 
