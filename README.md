@@ -33,7 +33,7 @@ Như đã thấy trên hình, mình đã tách được IP truy cập đến th�
 
 ---
 
-#Áp dụng để
+#Áp dụng để...
 
 Định dạng lại bản tin log của nginx (/var/log/nginx/access.log), apache (/var/log/ 
 apache2/access.log), ssh (/var/log/auth.log)
@@ -65,7 +65,7 @@ sudo chown logstash:logstash /opt/logstash/patterns
 ```
 
 ---
-#### Nginx
+#### 2. Với Nginx
 
 - #####Tại **Client**
 
@@ -129,7 +129,7 @@ filter {
 
 ---
 
-### APACHE:
+### 3. Với APACHE:
 
 - ##### Tại **Client**
 
@@ -180,7 +180,7 @@ filter {
 
 ---
 
-####SSH:
+####4. Với SSH:
 
 - ##### Tại **Client**
 
@@ -239,6 +239,7 @@ filter {
 ```
 
 `sudo service logstash restart`
+
 --- 
 
 Tham khảo
