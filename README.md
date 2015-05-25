@@ -218,6 +218,7 @@ SSHFAILED Failed %{WORD:auth_method} for %{USER:username} from %{IP:src_ip} port
 
 SSHACC Accepted %{WORD:auth_method} for %{USER:username} from %{IP:src_ip} port %{INT:src_port} ssh2
 
+SSHFU Failed %{WORD:auth_method} for invalid user %{USER:username} from %{IP:src_ip} port %{INT:src_port} ssh2
 ```
 
 `sudo chown logstash:logstash /opt/logstash/patterns/ssh`
@@ -232,6 +233,7 @@ filter {
     grok {
       match => { "message" => "%{SSHFAILED}" }
       match => { "message" => "%{SSHACC}" }
+      match => { "message" => "%{SSHFU}" }    
     } 
   }
 }
